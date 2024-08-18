@@ -6,9 +6,9 @@ package grind75;
 public class UpdateMatrixDistance {
 
     public int[][] updateMatrix(int[][] mat) {
+    	// set distance 0
         for (int i=0; i<mat.length; i++) {
             for (int j=0; j<mat[0].length; j++) {
-                // set distance 0
                 mat[i][j] = mat[i][j] == 0 ? 0 : Integer.MAX_VALUE;
             }
         }
